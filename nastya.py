@@ -44,7 +44,7 @@ def callback_worker(call):
         else:
            bot.send_message(call.message.chat.id, 'Такое мероприятие уже существует') 
     elif call.data == "no":
-        bot.send_message(call.message.chat.id, 'Пошел нахуй')
+        bot.send_message(call.message.chat.id, 'ff')
 
     
 @bot.message_handler(content_types=['text'])
@@ -57,7 +57,7 @@ def send_text(message):
     elif message.text.lower() == '2':
         bot.send_message(message.chat.id, 'Тест2')
     elif message.text.lower() == '3':
-        bot.send_message(message.chat_id, 'makson blyat')
+        bot.send_message(message.chat_id, 'ff')
 
 #@bot.message_handler(content_types=['photo'])
 #def send_photo(message):
